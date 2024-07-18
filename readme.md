@@ -1,4 +1,4 @@
-# Proyecto de Encriptación y Desencriptación de Vocales
+# Proyecto de Encriptación y Desencriptación de Vocales - ALURA LATAM
 
 Este proyecto utiliza HTML, CSS y JavaScript para implementar un sistema de encriptación y desencriptación de vocales. El objetivo principal es proteger la información sensible al reemplazar las vocales por caracteres especiales y luego poder revertir este proceso para obtener el texto original.
 
