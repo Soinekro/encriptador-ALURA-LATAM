@@ -1,0 +1,193 @@
+:root {
+  --primary-100: #609ed4;
+  --primary-200: #356ea9;
+  --primary-300: #0a3871;
+  --primary-400: #072b61;
+  --primary-500: #052051;
+  --light-blue-100: #f3f5fc;
+  --light-blue-200: #eff1fa;
+  --light-blue-300: #e9ecf8;
+  --light-blue-400: #aab2d5;
+  --light-blue-500: #757fb2;
+  --gray-100: #cde4da;
+  --gray-200: #adb5bd;
+  --gray-300: #868e96;
+  --gray-400: #495057;
+  --gray-500: #343a40;
+  --rounded: 0.75rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 15px;
+  /* width: 100%; */
+  /* height: 100vh; */
+  font-size: 16px;
+  background: linear-gradient(
+    45deg,
+    var(--primary-300),
+    var(--gray-300),
+    var(--gray-200),
+    var(--light-blue-200)
+  );
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+
+.btn-primary {
+  width: 7rem;
+  height: 3rem;
+  background-color: var(--primary-300);
+  color: white;
+  border: none;
+  border-radius: var(--rounded);
+  margin: auto;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--light-blue-100);
+    color: var(--primary-300);
+  }
+
+.texto {
+  resize: none;
+  height: 350px;
+  border-radius: var(--rounded);
+  border: var(--primary-300) 1px solid;
+  padding: 10px;
+}
+
+.btn-secondary {
+  width: 100px;
+  height: 50px;
+  background-color: var(--light-blue-300);
+  color: black;
+  border: none;
+  border-radius: var(--rounded);
+  margin: 10px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: var(--light-blue-400);
+    color: var(--light-blue-300);
+  }
+.texto-salida {
+  width: 100%;
+  height: 80%;
+}
+.img-texto-salida {
+  width: 100%;
+}
+.texto-encrypt {
+  margin-right: 10px;
+  padding: 1rem;
+  height: 100%;
+}
+
+.texto-decrypt {
+  height: 400px;
+  width: 240px;
+  text-align: center;
+  margin-left: 10px;
+  padding: 1rem;
+  border: var(--primary-300) 2px solid;
+  border-radius: var(--rounded);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .content {
+    display: block;
+  }
+
+  main {
+    display: block;
+    padding: 0.7rem;
+  }
+  .botones {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    width: 6rem;
+    height: 1.5rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+
+  .texto {
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .btn-secondary {
+    width: 6rem;
+    height: 1.5rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+  }
+
+  .texto-salida {
+    padding-top: 4px;
+  }
+
+  .img-texto-salida {
+    display: none;
+  }
+
+  .texto-encrypt {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .texto-decrypt {
+    max-width: 100%;
+    padding: 2px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+footer{
+    background: var(--primary-300);
+}
+.github-logo {
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  fill: white;
+}
+.github-logo:hover {
+  fill: var(--primary-100);
+}
+
